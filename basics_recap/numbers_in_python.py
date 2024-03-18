@@ -4,7 +4,6 @@ print(4//2)
 # normal division returns a float value
 print(4/2)
 
-print(n)
 
 # any mathematical operation which includes a float number will always give float as output
 

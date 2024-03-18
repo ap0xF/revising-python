@@ -46,23 +46,29 @@ def timer(f):
     return wrapper
 
 
+@timer
 def prime_factorization(n):
-    factors = {}
+    factors = set()  # defining an empty set in py.
     divisor = 2
 
     while n > 1:
         while n % divisor == 0:
             n //= divisor
         divisor += 1
-        factors
+        factors.add(divisor)
 
     return factors
-#test
+# test
 
-prime_factorization_timer = timer(prime_factorization)
 
-result = prime_factorization_timer(27)
 
-print(result)
 
-name: str = "Hello"
+
+#
+# prime_factorization_timer = timer(prime_factorization)
+#
+# result = prime_factorization_timer(27)
+#
+# print(result)
+#
+# name: str = "Hello"
