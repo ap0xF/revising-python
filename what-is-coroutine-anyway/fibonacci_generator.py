@@ -15,8 +15,6 @@ import random
 # except StopIteration:
 #     pass
 
-
-# another example of using yield keyword
 def counter(start=0):
     value = start
     while True:
@@ -24,7 +22,7 @@ def counter(start=0):
     # yield value
 
 
+# another example of using yield keyword
 def main():
     gen = counter(10)
     print(next(gen))
-
